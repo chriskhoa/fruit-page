@@ -12,7 +12,7 @@ mm.add("(max-width: 599px)", () => {
       end: `+=${height * 6}`,
       pin: true,
       scrub: 1,
-      markers: false,
+      markers: true,
     },
   });
   //   FRUIT PAGE
@@ -163,6 +163,66 @@ mm.add("(max-width: 599px)", () => {
     },
     "<"
   );
+  introtl.to(
+    "#to_lychee",
+    {
+      opacity: 1,
+    },
+    "<"
+  );
+
+  /* Animation for intro section */
+  let lycheetl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#lychee",
+      end: `+=${height * 2}`,
+      pin: true,
+      scrub: 1,
+      markers: true,
+    },
+  });
+  lycheetl.to("#lychee_name .char", {
+    opacity: 0,
+    y: "+=50px",
+    ease: "bounce.in",
+    stagger: 0.05,
+  });
+  lycheetl.to("#lychee", {
+    backgroundImage: "radial-gradient(#840000 100%, #ff8080 130%)",
+  });
+  lycheetl.fromTo(
+    "#lychee_title .char",
+    {
+      y: "+=30px",
+    },
+    {
+      y: "",
+      opacity: 1,
+      ease: "bounce.out",
+      stagger: 0.05,
+    }
+  );
+  lycheetl.fromTo(
+    "#lychee_image",
+    {
+      scale: 0.2,
+    },
+    {
+      scale: 1,
+      opacity: 1,
+      ease: "power2.out",
+    },
+    "<"
+  );
+  lycheetl.to("#lychee_des .word", {
+    opacity: 0.2,
+    ease: "power2.out",
+  });
+  lycheetl.to("#lychee_des .word", {
+    opacity: 1,
+    ease: "power2.inOut",
+    stagger: 0.05,
+  });
 });
 
 // desktop animation
@@ -325,6 +385,33 @@ mm.add("(min-width: 600px)", () => {
     },
     "<"
   );
+  introtl.to(
+    "#to_lychee",
+    {
+      opacity: 1,
+    },
+    "<"
+  );
+
+  /* Animation for intro section */
+  let lycheetl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#lychee",
+      // end: `+=${height * 6}`,
+      pin: true,
+      scrub: 1,
+      markers: true,
+    },
+  });
+  lycheetl.to("#lychee_name .char", {
+    opacity: 0,
+    y: "+=50px",
+    ease: "bounce.in",
+    stagger: 0.05,
+  });
+  lycheetl.to("#lychee", {
+    backgroundImage: "radial-gradient(#840000 100%, #ff8080 130%)",
+  });
 });
 
 // lenis smooth scrolling

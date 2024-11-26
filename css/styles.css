@@ -14,7 +14,9 @@ body {
   background-color: white;
 }
 
-#intro > p {
+#fruit_page,
+#with_a,
+#twist {
   font-size: 2.5rem;
   text-align: center;
   font-weight: 700;
@@ -38,8 +40,6 @@ body {
   grid-area: 1/1/2/2;
   font-size: 1.5rem;
   font-weight: 300;
-  /* letter-spacing: 0.1rem; */
-  /* line-height: 3rem; */
 }
 
 #exotic,
@@ -60,9 +60,88 @@ body {
   opacity: 0;
 }
 
+#to_lychee {
+  opacity: 0;
+  color: #840000;
+  text-align: center;
+  position: absolute;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 6rem;
+}
+
+/* Styling for lychee */
+#lychee {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff8080;
+}
+
+#lychee_name {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 700;
+  position: absolute;
+  color: #840000;
+}
+
+#lychee_content {
+  position: absolute;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+#lychee_image {
+  grid-area: 1/1/3/2;
+  height: 100%;
+  opacity: 0;
+  -webkit-mask-box-image: -webkit-linear-gradient(
+    bottom,
+    transparent 0%,
+    #840000 40%,
+    #840000 40%
+  );
+}
+
+#lychee_title {
+  grid-area: 2/1/4/2;
+  font-size: 7rem;
+  font-weight: 700;
+}
+
+#lychee_title .char {
+  color: #ff8080;
+  opacity: 0;
+}
+
+#lychee_des {
+  grid-area: 3/1/6/2;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 5% 10%;
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
+  margin: auto;
+  color: #ff8080;
+  text-align: justify;
+}
+
+#lychee_des .word {
+  opacity: 0;
+}
+
 @media only screen and (min-width: 600px) {
   /* Styling for intro section */
-  #intro > p {
+  #fruit_page,
+  #with_a,
+  #twist {
     font-size: 6rem;
     text-align: center;
     font-weight: 900;
@@ -81,5 +160,21 @@ body {
     font-weight: 500;
     letter-spacing: 0.1rem;
     line-height: 3rem;
+  }
+
+  #to_lychee {
+    line-height: 8rem;
+  }
+
+  #to_lychee {
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 10rem;
+  }
+
+  /* Styling for lychee */
+  #lychee_name {
+    font-size: 6rem;
+    font-weight: 900;
   }
 }
