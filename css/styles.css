@@ -129,12 +129,12 @@ body {
 #lychee_des {
   grid-area: 3/1/6/2;
   font-size: 1.5rem;
-  font-weight: 300;
-  padding: 10% 15%;
+  font-weight: 500;
+  padding: 10% 20%;
   line-height: 3.5rem;
   margin: auto;
   color: #ff8080;
-  text-align: center;
+  text-align: justify;
 }
 
 #lychee_des .word {
@@ -180,5 +180,19 @@ body {
   #lychee_name {
     font-size: 6rem;
     font-weight: 900;
+  }
+
+  #lychee_title {
+    font-size: 9rem;
+    font-weight: 900;
+  }
+
+  #lychee_des {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    padding: 5% 15%;
+    line-height: 5rem;
+    text-align: justify;
   }
 }

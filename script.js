@@ -1,6 +1,8 @@
 const width = window.innerWidth;
 const height = window.innerHeight;
-const splitText = new SplitType(".split");
+const splitText = new SplitType(".split", {
+  types: "words, chars",
+});
 let mm = gsap.matchMedia();
 
 // mobile animation
@@ -411,6 +413,39 @@ mm.add("(min-width: 600px)", () => {
   });
   lycheetl.to("#lychee", {
     backgroundImage: "radial-gradient(#840000 100%, #ff8080 130%)",
+  });
+  lycheetl.fromTo(
+    "#lychee_title .char",
+    {
+      y: "+=30px",
+    },
+    {
+      y: "",
+      opacity: 1,
+      ease: "bounce.out",
+      stagger: 0.05,
+    }
+  );
+  lycheetl.fromTo(
+    "#lychee_image",
+    {
+      scale: 0.2,
+    },
+    {
+      scale: 1,
+      opacity: 1,
+      ease: "power2.out",
+    },
+    "<"
+  );
+  lycheetl.to("#lychee_des .word", {
+    opacity: 0.2,
+    ease: "power2.out",
+  });
+  lycheetl.to("#lychee_des .word", {
+    opacity: 1,
+    ease: "power2.inOut",
+    stagger: 0.05,
   });
 });
 
