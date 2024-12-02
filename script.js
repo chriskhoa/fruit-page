@@ -3,6 +3,16 @@ const height = window.innerHeight;
 const splitText = new SplitType(".split", {
   types: "words, chars",
 });
+// fix accessibility for split text using aria label
+let words = splitText.words;
+let texts = document.querySelectorAll(".split");
+texts.forEach((text) => {
+  text.setAttribute("aria-label", text.innerText);
+});
+words.forEach((word) => {
+  word.setAttribute("aria-hidden", "true");
+});
+
 let mm = gsap.matchMedia();
 
 // mobile animation
@@ -173,7 +183,7 @@ mm.add("(max-width: 599px)", () => {
     "<"
   );
 
-  /* Animation for intro section */
+  /* LYCHEE SECTION */
   let lycheetl = gsap.timeline({
     scrollTrigger: {
       trigger: "#lychee",
@@ -224,6 +234,125 @@ mm.add("(max-width: 599px)", () => {
     opacity: 1,
     ease: "power2.inOut",
     stagger: 0.05,
+  });
+  // transition to papaya
+  lycheetl.to("#lychee", {
+    ease: "power2.inOut",
+    backgroundImage: "radial-gradient(#840000 -30%, #FFC080 0%)",
+  });
+  lycheetl.to(
+    "#lychee_image",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  lycheetl.to(
+    "#lychee_title",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  lycheetl.to(
+    "#lychee_des",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  lycheetl.to("#to_papaya", {
+    opacity: 1,
+    ease: "power2.inOut",
+  });
+
+  /* PAPAYA SECTION */
+  let papayatl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#papaya",
+      end: `+=${height * 2}`,
+      pin: true,
+      scrub: 1,
+      markers: true,
+    },
+  });
+  papayatl.to("#papaya_name .char", {
+    opacity: 0,
+    y: "+=50px",
+    ease: "bounce.in",
+    stagger: 0.05,
+  });
+  papayatl.to("#papaya", {
+    backgroundImage: "radial-gradient(#d75300 100%, #FFC080 130%)",
+  });
+  papayatl.fromTo(
+    "#papaya_title .char",
+    {
+      y: "+=30px",
+    },
+    {
+      y: "",
+      opacity: 1,
+      ease: "bounce.out",
+      stagger: 0.05,
+    }
+  );
+  papayatl.fromTo(
+    "#papaya_image",
+    {
+      scale: 0.2,
+    },
+    {
+      scale: 1,
+      opacity: 1,
+      ease: "power2.out",
+    },
+    "<"
+  );
+  papayatl.to("#papaya_des .word", {
+    opacity: 0.2,
+    ease: "power2.out",
+  });
+  papayatl.to("#papaya_des .word", {
+    opacity: 1,
+    ease: "power2.inOut",
+    stagger: 0.05,
+  });
+  // transition to durian
+  papayatl.to("#papaya", {
+    ease: "power2.inOut",
+    backgroundImage: "radial-gradient(#d75300 -30%, #FFEE80 0%)",
+  });
+  papayatl.to(
+    "#papaya_image",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  papayatl.to(
+    "#papaya_title",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  papayatl.to(
+    "#papaya_des",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  papayatl.to("#to_durian", {
+    opacity: 1,
+    ease: "power2.inOut",
   });
 });
 
@@ -395,11 +524,11 @@ mm.add("(min-width: 600px)", () => {
     "<"
   );
 
-  /* Animation for intro section */
+  /* Lychee section */
   let lycheetl = gsap.timeline({
     scrollTrigger: {
       trigger: "#lychee",
-      // end: `+=${height * 6}`,
+      end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
       markers: true,
@@ -446,6 +575,40 @@ mm.add("(min-width: 600px)", () => {
     opacity: 1,
     ease: "power2.inOut",
     stagger: 0.05,
+  });
+
+  // transition to papaya
+  lycheetl.to("#lychee", {
+    ease: "power2.inOut",
+    backgroundImage: "radial-gradient(#840000 -30%, #FFC080 0%)",
+  });
+  lycheetl.to(
+    "#lychee_image",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  lycheetl.to(
+    "#lychee_title",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  lycheetl.to(
+    "#lychee_des",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  lycheetl.to("#to_papaya", {
+    opacity: 1,
+    ease: "power2.inOut",
   });
 });
 

@@ -75,8 +75,9 @@ body {
   line-height: 6rem;
 }
 
-/* Styling for lychee */
-#lychee {
+/* Styling for lychee, papaya */
+#lychee,
+#papaya {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -86,7 +87,12 @@ body {
   background-color: #ff8080;
 }
 
-#lychee_name {
+#papaya {
+  background-color: #ffc080;
+}
+
+#lychee_name,
+#papaya_name {
   font-size: 4rem;
   text-align: center;
   font-weight: 700;
@@ -94,7 +100,12 @@ body {
   color: #840000;
 }
 
-#lychee_content {
+#papaya_name {
+  color: #d75300;
+}
+
+#lychee_content,
+#papaya_content {
   position: absolute;
   height: 100vh;
   display: grid;
@@ -103,7 +114,8 @@ body {
   justify-items: center;
 }
 
-#lychee_image {
+#lychee_image,
+#papaya_image {
   grid-area: 1/1/3/2;
   height: 100%;
   opacity: 0;
@@ -115,18 +127,34 @@ body {
   );
 }
 
-#lychee_title {
+#papaya_image {
+  -webkit-mask-box-image: -webkit-linear-gradient(
+    bottom,
+    transparent 0%,
+    #d75300 40%,
+    #d75300 40%
+  );
+}
+
+#lychee_title,
+#papaya_title {
   grid-area: 2/1/4/2;
   font-size: 5rem;
   font-weight: 700;
 }
 
-#lychee_title .char {
+#lychee_title .char,
+#papaya_title .char {
   color: #ff8080;
   opacity: 0;
 }
 
-#lychee_des {
+#papaya_title .char {
+  color: #ffc080;
+}
+
+#lychee_des,
+#papaya_des {
   grid-area: 3/1/6/2;
   font-size: 1.5rem;
   font-weight: 500;
@@ -137,8 +165,24 @@ body {
   text-align: center;
 }
 
-#lychee_des .word {
+#papaya_des {
+  color: #ffc080;
+}
+
+#lychee_des .word,
+#papaya_des .word {
   opacity: 0;
+}
+
+#to_papaya,
+#to_durian {
+  opacity: 0;
+  color: #d75300;
+  text-align: center;
+  position: absolute;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 6rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -194,5 +238,11 @@ body {
     padding: 5% 15%;
     line-height: 5rem;
     text-align: justify;
+  }
+
+  #to_papaya {
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 10rem;
   }
 }
