@@ -24,7 +24,7 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: no-preference)", () => {
       end: `+=${height * 6}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   //   FRUIT PAGE
@@ -190,7 +190,7 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: no-preference)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   lycheetl.to("#lychee_name .char", {
@@ -284,7 +284,7 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: no-preference)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   papayatl.to("#papaya_name .char", {
@@ -378,7 +378,7 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: no-preference)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   duriantl.to("#durian_name .char", {
@@ -472,7 +472,7 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: no-preference)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   custardtl.to("#custard_name .char", {
@@ -735,7 +735,7 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: no-preference)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   lycheetl.to("#lychee_name .char", {
@@ -830,7 +830,7 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: no-preference)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   papayatl.to("#papaya_name .char", {
@@ -924,7 +924,7 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: no-preference)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   duriantl.to("#durian_name .char", {
@@ -1018,7 +1018,7 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: no-preference)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   custardtl.to("#custard_name .char", {
@@ -1115,7 +1115,7 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
       end: `+=${height * 6}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   //   FRUIT PAGE
@@ -1279,7 +1279,7 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   lycheetl.to("#lychee_name .char", {
@@ -1373,7 +1373,7 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   papayatl.to("#papaya_name .char", {
@@ -1467,7 +1467,7 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   duriantl.to("#durian_name .char", {
@@ -1561,7 +1561,7 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   custardtl.to("#custard_name .char", {
@@ -1658,7 +1658,7 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: reduce)", () => {
       end: `+=${height * 6}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   //   FRUIT PAGE
@@ -1822,7 +1822,7 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: reduce)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   lycheetl.to("#lychee_name .char", {
@@ -1916,7 +1916,7 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: reduce)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   papayatl.to("#papaya_name .char", {
@@ -2010,7 +2010,7 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: reduce)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   duriantl.to("#durian_name .char", {
@@ -2104,7 +2104,7 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: reduce)", () => {
       end: `+=${height * 2}`,
       pin: true,
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   });
   custardtl.to("#custard_name .char", {
