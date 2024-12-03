@@ -610,6 +610,92 @@ mm.add("(min-width: 600px)", () => {
     opacity: 1,
     ease: "power2.inOut",
   });
+
+  /* PAPAYA SECTION */
+  let papayatl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#papaya",
+      end: `+=${height * 2}`,
+      pin: true,
+      scrub: 1,
+      markers: true,
+    },
+  });
+  papayatl.to("#papaya_name .char", {
+    opacity: 0,
+    y: "+=50px",
+    ease: "bounce.in",
+    stagger: 0.05,
+  });
+  papayatl.to("#papaya", {
+    backgroundImage: "radial-gradient(#d75300 100%, #FFC080 130%)",
+  });
+  papayatl.fromTo(
+    "#papaya_title .char",
+    {
+      y: "+=30px",
+    },
+    {
+      y: "",
+      opacity: 1,
+      ease: "bounce.out",
+      stagger: 0.05,
+    }
+  );
+  papayatl.fromTo(
+    "#papaya_image",
+    {
+      scale: 0.2,
+    },
+    {
+      scale: 1,
+      opacity: 1,
+      ease: "power2.out",
+    },
+    "<"
+  );
+  papayatl.to("#papaya_des .word", {
+    opacity: 0.2,
+    ease: "power2.out",
+  });
+  papayatl.to("#papaya_des .word", {
+    opacity: 1,
+    ease: "power2.inOut",
+    stagger: 0.05,
+  });
+  // transition to durian
+  papayatl.to("#papaya", {
+    ease: "power2.inOut",
+    backgroundImage: "radial-gradient(#d75300 -30%, #FFEE80 0%)",
+  });
+  papayatl.to(
+    "#papaya_image",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  papayatl.to(
+    "#papaya_title",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  papayatl.to(
+    "#papaya_des",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  papayatl.to("#to_durian", {
+    opacity: 1,
+    ease: "power2.inOut",
+  });
 });
 
 // lenis smooth scrolling

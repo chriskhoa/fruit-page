@@ -185,6 +185,10 @@ body {
   line-height: 6rem;
 }
 
+#to_durian {
+  color: #808000;
+}
+
 @media only screen and (min-width: 600px) {
   /* Styling for intro section */
   #fruit_page,
@@ -221,17 +225,20 @@ body {
   }
 
   /* Styling for lychee */
-  #lychee_name {
+  #lychee_name,
+  #papaya_name {
     font-size: 6rem;
     font-weight: 900;
   }
 
-  #lychee_title {
+  #lychee_title,
+  #papaya_title {
     font-size: 9rem;
     font-weight: 900;
   }
 
-  #lychee_des {
+  #lychee_des,
+  #papaya_des {
     font-size: 2.5rem;
     letter-spacing: 0.2rem;
     font-weight: 500;
@@ -240,7 +247,8 @@ body {
     text-align: justify;
   }
 
-  #to_papaya {
+  #to_papaya,
+  #to_durian {
     font-size: 6rem;
     font-weight: 900;
     line-height: 10rem;
