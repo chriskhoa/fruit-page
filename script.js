@@ -728,7 +728,7 @@ mm.add("(min-width: 600px)", () => {
     "<"
   );
 
-  /* Lychee section */
+  /* LYCHEE SECTION */
   let lycheetl = gsap.timeline({
     scrollTrigger: {
       trigger: "#lychee",
@@ -786,6 +786,14 @@ mm.add("(min-width: 600px)", () => {
     ease: "power2.inOut",
     backgroundImage: "radial-gradient(#840000 -30%, #FFC080 0%)",
   });
+  lycheetl.to(
+    "#lychee",
+    {
+      ease: "power2.inOut",
+      backgroundColor: "#FFC080",
+    },
+    "<"
+  );
   lycheetl.to(
     "#lychee_image",
     {
@@ -873,6 +881,14 @@ mm.add("(min-width: 600px)", () => {
     backgroundImage: "radial-gradient(#d75300 -30%, #FFEE80 0%)",
   });
   papayatl.to(
+    "#papaya",
+    {
+      ease: "power2.inOut",
+      backgroundColor: "#FFEE80",
+    },
+    "<"
+  );
+  papayatl.to(
     "#papaya_image",
     {
       opacity: 0,
@@ -959,6 +975,14 @@ mm.add("(min-width: 600px)", () => {
     backgroundImage: "radial-gradient(#808000 -30%, #80FF80 0%)",
   });
   duriantl.to(
+    "#durian",
+    {
+      ease: "power2.inOut",
+      backgroundColor: "#80FF80",
+    },
+    "<"
+  );
+  duriantl.to(
     "#durian_image",
     {
       opacity: 0,
@@ -1044,6 +1068,14 @@ mm.add("(min-width: 600px)", () => {
     ease: "power2.inOut",
     backgroundImage: "radial-gradient(#0a7a00 -30%, #BB80FF 0%)",
   });
+  custardtl.to(
+    "#custard",
+    {
+      ease: "power2.inOut",
+      backgroundColor: "#BB80FF",
+    },
+    "<"
+  );
   custardtl.to(
     "#custard_image",
     {
