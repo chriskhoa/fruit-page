@@ -239,8 +239,15 @@ mm.add("(max-width: 599px)", () => {
   lycheetl.to("#lychee", {
     ease: "power2.inOut",
     backgroundImage: "radial-gradient(#840000 -30%, #FFC080 0%)",
-    immediateRender: true,
   });
+  lycheetl.to(
+    "#lychee",
+    {
+      ease: "power2.inOut",
+      backgroundColor: "#FFC080",
+    },
+    "<"
+  );
   lycheetl.to(
     "#lychee_image",
     {
