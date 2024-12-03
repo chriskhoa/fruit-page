@@ -335,6 +335,14 @@ mm.add("(max-width: 599px)", () => {
     backgroundImage: "radial-gradient(#d75300 -30%, #FFEE80 0%)",
   });
   papayatl.to(
+    "#papaya",
+    {
+      ease: "power2.inOut",
+      backgroundColor: "#FFEE80",
+    },
+    "<"
+  );
+  papayatl.to(
     "#papaya_image",
     {
       opacity: 0,
@@ -421,6 +429,14 @@ mm.add("(max-width: 599px)", () => {
     backgroundImage: "radial-gradient(#808000 -30%, #80FF80 0%)",
   });
   duriantl.to(
+    "#durian",
+    {
+      ease: "power2.inOut",
+      backgroundColor: "#80FF80",
+    },
+    "<"
+  );
+  duriantl.to(
     "#durian_image",
     {
       opacity: 0,
@@ -506,6 +522,14 @@ mm.add("(max-width: 599px)", () => {
     ease: "power2.inOut",
     backgroundImage: "radial-gradient(#0a7a00 -30%, #BB80FF 0%)",
   });
+  custardtl.to(
+    "#custard",
+    {
+      ease: "power2.inOut",
+      backgroundColor: "#BB80FF",
+    },
+    "<"
+  );
   custardtl.to(
     "#custard_image",
     {

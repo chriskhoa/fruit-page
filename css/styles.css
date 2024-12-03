@@ -122,7 +122,6 @@ body {
 
 #custard_name {
   color: #0a7a00;
-  line-height: 6rem;
 }
 
 #lychee_content,
@@ -186,11 +185,6 @@ body {
   grid-area: 2/1/4/2;
   font-size: 5rem;
   font-weight: 700;
-}
-
-#custard_title {
-  font-size: 4rem;
-  text-align: center;
 }
 
 #lychee_title .char,
@@ -321,10 +315,6 @@ body {
   #custard_title {
     font-size: 9rem;
     font-weight: 900;
-  }
-
-  #custard_title {
-    font-size: 6rem;
   }
 
   #lychee_des,
