@@ -354,6 +354,92 @@ mm.add("(max-width: 599px)", () => {
     opacity: 1,
     ease: "power2.inOut",
   });
+
+  /* DURIAN SECTION */
+  let duriantl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#durian",
+      end: `+=${height * 2}`,
+      pin: true,
+      scrub: 1,
+      markers: true,
+    },
+  });
+  duriantl.to("#durian_name .char", {
+    opacity: 0,
+    y: "+=50px",
+    ease: "bounce.in",
+    stagger: 0.05,
+  });
+  duriantl.to("#durian", {
+    backgroundImage: "radial-gradient(#808000 100%, #FFEE80 130%)",
+  });
+  duriantl.fromTo(
+    "#durian_title .char",
+    {
+      y: "+=30px",
+    },
+    {
+      y: "",
+      opacity: 1,
+      ease: "bounce.out",
+      stagger: 0.05,
+    }
+  );
+  duriantl.fromTo(
+    "#durian_image",
+    {
+      scale: 0.2,
+    },
+    {
+      scale: 1,
+      opacity: 1,
+      ease: "power2.out",
+    },
+    "<"
+  );
+  duriantl.to("#durian_des .word", {
+    opacity: 0.2,
+    ease: "power2.out",
+  });
+  duriantl.to("#durian_des .word", {
+    opacity: 1,
+    ease: "power2.inOut",
+    stagger: 0.05,
+  });
+  // transition to custard apple
+  duriantl.to("#durian", {
+    ease: "power2.inOut",
+    backgroundImage: "radial-gradient(#808000 -30%, #80FF80 0%)",
+  });
+  duriantl.to(
+    "#durian_image",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  duriantl.to(
+    "#durian_title",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  duriantl.to(
+    "#durian_des",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  duriantl.to("#to_custard", {
+    opacity: 1,
+    ease: "power2.inOut",
+  });
 });
 
 // desktop animation
@@ -693,6 +779,92 @@ mm.add("(min-width: 600px)", () => {
     "<"
   );
   papayatl.to("#to_durian", {
+    opacity: 1,
+    ease: "power2.inOut",
+  });
+
+  /* DURIAN SECTION */
+  let duriantl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#durian",
+      end: `+=${height * 2}`,
+      pin: true,
+      scrub: 1,
+      markers: true,
+    },
+  });
+  duriantl.to("#durian_name .char", {
+    opacity: 0,
+    y: "+=50px",
+    ease: "bounce.in",
+    stagger: 0.05,
+  });
+  duriantl.to("#durian", {
+    backgroundImage: "radial-gradient(#808000 100%, #FFEE80 130%)",
+  });
+  duriantl.fromTo(
+    "#durian_title .char",
+    {
+      y: "+=30px",
+    },
+    {
+      y: "",
+      opacity: 1,
+      ease: "bounce.out",
+      stagger: 0.05,
+    }
+  );
+  duriantl.fromTo(
+    "#durian_image",
+    {
+      scale: 0.2,
+    },
+    {
+      scale: 1,
+      opacity: 1,
+      ease: "power2.out",
+    },
+    "<"
+  );
+  duriantl.to("#durian_des .word", {
+    opacity: 0.2,
+    ease: "power2.out",
+  });
+  duriantl.to("#durian_des .word", {
+    opacity: 1,
+    ease: "power2.inOut",
+    stagger: 0.05,
+  });
+  // transition to custard apple
+  duriantl.to("#durian", {
+    ease: "power2.inOut",
+    backgroundImage: "radial-gradient(#808000 -30%, #80FF80 0%)",
+  });
+  duriantl.to(
+    "#durian_image",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  duriantl.to(
+    "#durian_title",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  duriantl.to(
+    "#durian_des",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  duriantl.to("#to_custard", {
     opacity: 1,
     ease: "power2.inOut",
   });

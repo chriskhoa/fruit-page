@@ -75,9 +75,10 @@ body {
   line-height: 6rem;
 }
 
-/* Styling for lychee, papaya */
+/* Styling for lychee, papaya, durian */
 #lychee,
-#papaya {
+#papaya,
+#durian {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -91,8 +92,13 @@ body {
   background-color: #ffc080;
 }
 
+#durian {
+  background-color: #ffee80;
+}
+
 #lychee_name,
-#papaya_name {
+#papaya_name,
+#durian_name {
   font-size: 4rem;
   text-align: center;
   font-weight: 700;
@@ -104,8 +110,13 @@ body {
   color: #d75300;
 }
 
+#durian_name {
+  color: #808000;
+}
+
 #lychee_content,
-#papaya_content {
+#papaya_content,
+#durian_content {
   position: absolute;
   height: 100vh;
   display: grid;
@@ -115,7 +126,8 @@ body {
 }
 
 #lychee_image,
-#papaya_image {
+#papaya_image,
+#durian_image {
   grid-area: 1/1/3/2;
   height: 100%;
   opacity: 0;
@@ -136,15 +148,26 @@ body {
   );
 }
 
+#papaya_image {
+  -webkit-mask-box-image: -webkit-linear-gradient(
+    bottom,
+    transparent 0%,
+    #808000 40%,
+    #808000 40%
+  );
+}
+
 #lychee_title,
-#papaya_title {
+#papaya_title,
+#durian_title {
   grid-area: 2/1/4/2;
   font-size: 5rem;
   font-weight: 700;
 }
 
 #lychee_title .char,
-#papaya_title .char {
+#papaya_title .char,
+#durian_title .char {
   color: #ff8080;
   opacity: 0;
 }
@@ -153,8 +176,13 @@ body {
   color: #ffc080;
 }
 
+#durian_title .char {
+  color: #ffee80;
+}
+
 #lychee_des,
-#papaya_des {
+#papaya_des,
+#durian_des {
   grid-area: 3/1/6/2;
   font-size: 1.5rem;
   font-weight: 500;
@@ -169,13 +197,19 @@ body {
   color: #ffc080;
 }
 
+#durian_des {
+  color: #ffee80;
+}
+
 #lychee_des .word,
-#papaya_des .word {
+#papaya_des .word,
+#durian_des .word {
   opacity: 0;
 }
 
 #to_papaya,
-#to_durian {
+#to_durian,
+#to_custard {
   opacity: 0;
   color: #d75300;
   text-align: center;
@@ -187,6 +221,10 @@ body {
 
 #to_durian {
   color: #808000;
+}
+
+#to_custard {
+  color: #0a7a00;
 }
 
 @media only screen and (min-width: 600px) {
@@ -226,19 +264,22 @@ body {
 
   /* Styling for lychee */
   #lychee_name,
-  #papaya_name {
+  #papaya_name,
+  #durian_name {
     font-size: 6rem;
     font-weight: 900;
   }
 
   #lychee_title,
-  #papaya_title {
+  #papaya_title,
+  #durian_title {
     font-size: 9rem;
     font-weight: 900;
   }
 
   #lychee_des,
-  #papaya_des {
+  #papaya_des,
+  #durian_des {
     font-size: 2.5rem;
     letter-spacing: 0.2rem;
     font-weight: 500;
@@ -248,7 +289,8 @@ body {
   }
 
   #to_papaya,
-  #to_durian {
+  #to_durian,
+  #to_custard {
     font-size: 6rem;
     font-weight: 900;
     line-height: 10rem;
