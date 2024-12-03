@@ -440,6 +440,92 @@ mm.add("(max-width: 599px)", () => {
     opacity: 1,
     ease: "power2.inOut",
   });
+
+  /* CUSTARD APPLE SECTION */
+  let custardtl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#custard",
+      end: `+=${height * 2}`,
+      pin: true,
+      scrub: 1,
+      markers: true,
+    },
+  });
+  custardtl.to("#custard_name .char", {
+    opacity: 0,
+    y: "+=50px",
+    ease: "bounce.in",
+    stagger: 0.05,
+  });
+  custardtl.to("#custard", {
+    backgroundImage: "radial-gradient(#0a7a00 100%, #80FF80 130%)",
+  });
+  custardtl.fromTo(
+    "#custard_title .char",
+    {
+      y: "+=30px",
+    },
+    {
+      y: "",
+      opacity: 1,
+      ease: "bounce.out",
+      stagger: 0.05,
+    }
+  );
+  custardtl.fromTo(
+    "#custard_image",
+    {
+      scale: 0.2,
+    },
+    {
+      scale: 1,
+      opacity: 1,
+      ease: "power2.out",
+    },
+    "<"
+  );
+  custardtl.to("#custard_des .word", {
+    opacity: 0.2,
+    ease: "power2.out",
+  });
+  custardtl.to("#custard_des .word", {
+    opacity: 1,
+    ease: "power2.inOut",
+    stagger: 0.05,
+  });
+  // transition to mangosteen
+  custardtl.to("#custard", {
+    ease: "power2.inOut",
+    backgroundImage: "radial-gradient(#0a7a00 -30%, #BB80FF 0%)",
+  });
+  custardtl.to(
+    "#custard_image",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  custardtl.to(
+    "#custard_title",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  custardtl.to(
+    "#custard_des",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  custardtl.to("#to_mangosteen", {
+    opacity: 1,
+    ease: "power2.inOut",
+  });
 });
 
 // desktop animation
@@ -865,6 +951,92 @@ mm.add("(min-width: 600px)", () => {
     "<"
   );
   duriantl.to("#to_custard", {
+    opacity: 1,
+    ease: "power2.inOut",
+  });
+
+  /* CUSTARD APPLE SECTION */
+  let custardtl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#custard",
+      end: `+=${height * 2}`,
+      pin: true,
+      scrub: 1,
+      markers: true,
+    },
+  });
+  custardtl.to("#custard_name .char", {
+    opacity: 0,
+    y: "+=50px",
+    ease: "bounce.in",
+    stagger: 0.05,
+  });
+  custardtl.to("#custard", {
+    backgroundImage: "radial-gradient(#0a7a00 100%, #80FF80 130%)",
+  });
+  custardtl.fromTo(
+    "#custard_title .char",
+    {
+      y: "+=30px",
+    },
+    {
+      y: "",
+      opacity: 1,
+      ease: "bounce.out",
+      stagger: 0.05,
+    }
+  );
+  custardtl.fromTo(
+    "#custard_image",
+    {
+      scale: 0.2,
+    },
+    {
+      scale: 1,
+      opacity: 1,
+      ease: "power2.out",
+    },
+    "<"
+  );
+  custardtl.to("#custard_des .word", {
+    opacity: 0.2,
+    ease: "power2.out",
+  });
+  custardtl.to("#custard_des .word", {
+    opacity: 1,
+    ease: "power2.inOut",
+    stagger: 0.05,
+  });
+  // transition to mangosteen
+  custardtl.to("#custard", {
+    ease: "power2.inOut",
+    backgroundImage: "radial-gradient(#0a7a00 -30%, #BB80FF 0%)",
+  });
+  custardtl.to(
+    "#custard_image",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  custardtl.to(
+    "#custard_title",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  custardtl.to(
+    "#custard_des",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  custardtl.to("#to_mangosteen", {
     opacity: 1,
     ease: "power2.inOut",
   });
