@@ -558,6 +558,100 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: no-preference)", () => {
     opacity: 1,
     ease: "power2.inOut",
   });
+
+  /* MANGOSTEEN SECTION */
+  let mangosteentl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#mangosteen",
+      end: `+=${height * 2}`,
+      pin: true,
+      scrub: 1,
+      markers: false,
+    },
+  });
+  mangosteentl.to("#mangosteen_name .char", {
+    opacity: 0,
+    y: "+=50px",
+    ease: "bounce.in",
+    stagger: 0.05,
+  });
+  mangosteentl.to("#mangosteen", {
+    backgroundImage: "radial-gradient(#55006e 100%, #bb80ff 130%)",
+  });
+  mangosteentl.fromTo(
+    "#mangosteen_title .char",
+    {
+      y: "+=30px",
+    },
+    {
+      y: "",
+      opacity: 1,
+      ease: "bounce.out",
+      stagger: 0.05,
+    }
+  );
+  mangosteentl.fromTo(
+    "#mangosteen_image",
+    {
+      scale: 0.2,
+    },
+    {
+      scale: 1,
+      opacity: 1,
+      ease: "power2.out",
+    },
+    "<"
+  );
+  mangosteentl.to("#mangosteen_des .word", {
+    opacity: 0.2,
+    ease: "power2.out",
+  });
+  mangosteentl.to("#mangosteen_des .word", {
+    opacity: 1,
+    ease: "power2.inOut",
+    stagger: 0.05,
+  });
+  // transition to end
+  mangosteentl.to("#mangosteen", {
+    ease: "power2.inOut",
+    backgroundImage: "radial-gradient(#55006e -30%, #FFFFFF 0%)",
+  });
+  mangosteentl.to(
+    "#mangosteen",
+    {
+      ease: "power2.inOut",
+      backgroundColor: "#FFFFFF",
+    },
+    "<"
+  );
+  mangosteentl.to(
+    "#mangosteen_image",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  mangosteentl.to(
+    "#mangosteen_title",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  mangosteentl.to(
+    "#mangosteen_des",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  mangosteentl.to("#to_end", {
+    opacity: 1,
+    ease: "power2.inOut",
+  });
 });
 
 // desktop animation
@@ -1104,6 +1198,100 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: no-preference)", () => {
     opacity: 1,
     ease: "power2.inOut",
   });
+
+  /* MANGOSTEEN SECTION */
+  let mangosteentl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#mangosteen",
+      end: `+=${height * 2}`,
+      pin: true,
+      scrub: 1,
+      markers: false,
+    },
+  });
+  mangosteentl.to("#mangosteen_name .char", {
+    opacity: 0,
+    y: "+=50px",
+    ease: "bounce.in",
+    stagger: 0.05,
+  });
+  mangosteentl.to("#mangosteen", {
+    backgroundImage: "radial-gradient(#55006e 100%, #bb80ff 130%)",
+  });
+  mangosteentl.fromTo(
+    "#mangosteen_title .char",
+    {
+      y: "+=30px",
+    },
+    {
+      y: "",
+      opacity: 1,
+      ease: "bounce.out",
+      stagger: 0.05,
+    }
+  );
+  mangosteentl.fromTo(
+    "#mangosteen_image",
+    {
+      scale: 0.2,
+    },
+    {
+      scale: 1,
+      opacity: 1,
+      ease: "power2.out",
+    },
+    "<"
+  );
+  mangosteentl.to("#mangosteen_des .word", {
+    opacity: 0.2,
+    ease: "power2.out",
+  });
+  mangosteentl.to("#mangosteen_des .word", {
+    opacity: 1,
+    ease: "power2.inOut",
+    stagger: 0.05,
+  });
+  // transition to end
+  mangosteentl.to("#mangosteen", {
+    ease: "power2.inOut",
+    backgroundImage: "radial-gradient(#55006e -30%, #FFFFFF 0%)",
+  });
+  mangosteentl.to(
+    "#mangosteen",
+    {
+      ease: "power2.inOut",
+      backgroundColor: "#FFFFFF",
+    },
+    "<"
+  );
+  mangosteentl.to(
+    "#mangosteen_image",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  mangosteentl.to(
+    "#mangosteen_title",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  mangosteentl.to(
+    "#mangosteen_des",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  mangosteentl.to("#to_end", {
+    opacity: 1,
+    ease: "power2.inOut",
+  });
 });
 
 // // reduce motion for mobile
@@ -1112,7 +1300,7 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
   let introtl = gsap.timeline({
     scrollTrigger: {
       trigger: "#intro",
-      end: `+=${height * 6}`,
+      end: `+=${height * 3}`,
       pin: true,
       scrub: 1,
       markers: false,
@@ -1276,7 +1464,7 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
   let lycheetl = gsap.timeline({
     scrollTrigger: {
       trigger: "#lychee",
-      end: `+=${height * 2}`,
+      end: `+=${height * 1}`,
       pin: true,
       scrub: 1,
       markers: false,
@@ -1284,30 +1472,30 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
   });
   lycheetl.to("#lychee_name .char", {
     opacity: 0,
-    y: "+=50px",
-    ease: "bounce.in",
-    stagger: 0.05,
+    // y: "+=50px",
+    ease: "power2.in",
+    // stagger: 0.05,
   });
   lycheetl.to("#lychee", {
-    backgroundImage: "radial-gradient(#840000 100%, #ff8080 130%)",
+    backgroundColor: "#840000",
   });
-  lycheetl.fromTo(
+  lycheetl.to(
     "#lychee_title .char",
+    // {
+    //   y: "+=30px",
+    // },
     {
-      y: "+=30px",
-    },
-    {
-      y: "",
+      // y: "",
       opacity: 1,
-      ease: "bounce.out",
-      stagger: 0.05,
+      ease: "power2.out",
+      // stagger: 0.05,
     }
   );
-  lycheetl.fromTo(
+  lycheetl.to(
     "#lychee_image",
-    {
-      scale: 0.2,
-    },
+    // {
+    //   scale: 0.2,
+    // },
     {
       scale: 1,
       opacity: 1,
@@ -1315,28 +1503,24 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
     },
     "<"
   );
-  lycheetl.to("#lychee_des .word", {
-    opacity: 0.2,
-    ease: "power2.out",
-  });
+  // lycheetl.to("#lychee_des .word", {
+  //   opacity: 0.2,
+  //   ease: "power2.out",
+  // });
   lycheetl.to("#lychee_des .word", {
     opacity: 1,
     ease: "power2.inOut",
-    stagger: 0.05,
+    // stagger: 0.05,
   });
   // transition to papaya
+  // lycheetl.to("#lychee", {
+  //   ease: "power2.inOut",
+  //   backgroundImage: "radial-gradient(#840000 -30%, #FFC080 0%)",
+  // });
   lycheetl.to("#lychee", {
     ease: "power2.inOut",
-    backgroundImage: "radial-gradient(#840000 -30%, #FFC080 0%)",
+    backgroundColor: "#FFC080",
   });
-  lycheetl.to(
-    "#lychee",
-    {
-      ease: "power2.inOut",
-      backgroundColor: "#FFC080",
-    },
-    "<"
-  );
   lycheetl.to(
     "#lychee_image",
     {
@@ -1370,7 +1554,7 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
   let papayatl = gsap.timeline({
     scrollTrigger: {
       trigger: "#papaya",
-      end: `+=${height * 2}`,
+      end: `+=${height * 1}`,
       pin: true,
       scrub: 1,
       markers: false,
@@ -1378,59 +1562,55 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
   });
   papayatl.to("#papaya_name .char", {
     opacity: 0,
-    y: "+=50px",
-    ease: "bounce.in",
-    stagger: 0.05,
+    // y: "+=50px",
+    ease: "power2.in",
+    // stagger: 0.05,
   });
   papayatl.to("#papaya", {
-    backgroundImage: "radial-gradient(#d75300 100%, #FFC080 130%)",
+    backgroundColor: "#d75300",
   });
-  papayatl.fromTo(
+  papayatl.to(
     "#papaya_title .char",
+    // {
+    //   y: "+=30px",
+    // },
     {
-      y: "+=30px",
-    },
-    {
-      y: "",
+      // y: "",
       opacity: 1,
-      ease: "bounce.out",
-      stagger: 0.05,
+      ease: "power2.out",
+      // stagger: 0.05,
     }
   );
-  papayatl.fromTo(
+  papayatl.to(
     "#papaya_image",
+    // {
+    //   scale: 0.2,
+    // },
     {
-      scale: 0.2,
-    },
-    {
-      scale: 1,
+      // scale: 1,
       opacity: 1,
       ease: "power2.out",
     },
     "<"
   );
-  papayatl.to("#papaya_des .word", {
-    opacity: 0.2,
-    ease: "power2.out",
-  });
+  // papayatl.to("#papaya_des .word", {
+  //   opacity: 0.2,
+  //   ease: "power2.out",
+  // });
   papayatl.to("#papaya_des .word", {
     opacity: 1,
     ease: "power2.inOut",
-    stagger: 0.05,
+    // stagger: 0.05,
   });
   // transition to durian
+  // papayatl.to("#papaya", {
+  //   ease: "power2.inOut",
+  //   backgroundImage: "radial-gradient(#d75300 -30%, #FFEE80 0%)",
+  // });
   papayatl.to("#papaya", {
     ease: "power2.inOut",
-    backgroundImage: "radial-gradient(#d75300 -30%, #FFEE80 0%)",
+    backgroundColor: "#FFEE80",
   });
-  papayatl.to(
-    "#papaya",
-    {
-      ease: "power2.inOut",
-      backgroundColor: "#FFEE80",
-    },
-    "<"
-  );
   papayatl.to(
     "#papaya_image",
     {
@@ -1464,7 +1644,7 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
   let duriantl = gsap.timeline({
     scrollTrigger: {
       trigger: "#durian",
-      end: `+=${height * 2}`,
+      end: `+=${height * 1}`,
       pin: true,
       scrub: 1,
       markers: false,
@@ -1472,59 +1652,55 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
   });
   duriantl.to("#durian_name .char", {
     opacity: 0,
-    y: "+=50px",
-    ease: "bounce.in",
-    stagger: 0.05,
+    // y: "+=50px",
+    ease: "power2.in",
+    // stagger: 0.05,
   });
   duriantl.to("#durian", {
-    backgroundImage: "radial-gradient(#808000 100%, #FFEE80 130%)",
+    backgroundColor: "#808000",
   });
-  duriantl.fromTo(
+  duriantl.to(
     "#durian_title .char",
+    // {
+    //   y: "+=30px",
+    // },
     {
-      y: "+=30px",
-    },
-    {
-      y: "",
+      // y: "",
       opacity: 1,
-      ease: "bounce.out",
-      stagger: 0.05,
+      ease: "power2.out",
+      // stagger: 0.05,
     }
   );
-  duriantl.fromTo(
+  duriantl.to(
     "#durian_image",
+    // {
+    //   scale: 0.2,
+    // },
     {
-      scale: 0.2,
-    },
-    {
-      scale: 1,
+      // scale: 1,
       opacity: 1,
       ease: "power2.out",
     },
     "<"
   );
-  duriantl.to("#durian_des .word", {
-    opacity: 0.2,
-    ease: "power2.out",
-  });
+  // duriantl.to("#durian_des .word", {
+  //   opacity: 0.2,
+  //   ease: "power2.out",
+  // });
   duriantl.to("#durian_des .word", {
     opacity: 1,
     ease: "power2.inOut",
-    stagger: 0.05,
+    // stagger: 0.05,
   });
   // transition to custard apple
+  // duriantl.to("#durian", {
+  //   ease: "power2.inOut",
+  //   backgroundImage: "radial-gradient(#808000 -30%, #80FF80 0%)",
+  // });
   duriantl.to("#durian", {
     ease: "power2.inOut",
-    backgroundImage: "radial-gradient(#808000 -30%, #80FF80 0%)",
+    backgroundColor: "#80FF80",
   });
-  duriantl.to(
-    "#durian",
-    {
-      ease: "power2.inOut",
-      backgroundColor: "#80FF80",
-    },
-    "<"
-  );
   duriantl.to(
     "#durian_image",
     {
@@ -1558,7 +1734,7 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
   let custardtl = gsap.timeline({
     scrollTrigger: {
       trigger: "#custard",
-      end: `+=${height * 2}`,
+      end: `+=${height * 1}`,
       pin: true,
       scrub: 1,
       markers: false,
@@ -1566,59 +1742,55 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
   });
   custardtl.to("#custard_name .char", {
     opacity: 0,
-    y: "+=50px",
-    ease: "bounce.in",
-    stagger: 0.05,
+    // y: "+=50px",
+    ease: "power2.in",
+    // stagger: 0.05,
   });
   custardtl.to("#custard", {
-    backgroundImage: "radial-gradient(#0a7a00 100%, #80FF80 130%)",
+    backgroundColor: "#0a7a00",
   });
-  custardtl.fromTo(
+  custardtl.to(
     "#custard_title .char",
+    // {
+    //   y: "+=30px",
+    // },
     {
-      y: "+=30px",
-    },
-    {
-      y: "",
+      // y: "",
       opacity: 1,
-      ease: "bounce.out",
-      stagger: 0.05,
+      ease: "power2.out",
+      // stagger: 0.05,
     }
   );
-  custardtl.fromTo(
+  custardtl.to(
     "#custard_image",
+    // {
+    //   scale: 0.2,
+    // },
     {
-      scale: 0.2,
-    },
-    {
-      scale: 1,
+      // scale: 1,
       opacity: 1,
       ease: "power2.out",
     },
     "<"
   );
-  custardtl.to("#custard_des .word", {
-    opacity: 0.2,
-    ease: "power2.out",
-  });
+  // custardtl.to("#custard_des .word", {
+  //   opacity: 0.2,
+  //   ease: "power2.out",
+  // });
   custardtl.to("#custard_des .word", {
     opacity: 1,
     ease: "power2.inOut",
-    stagger: 0.05,
+    // stagger: 0.05,
   });
   // transition to mangosteen
+  // custardtl.to("#custard", {
+  //   ease: "power2.inOut",
+  //   backgroundImage: "radial-gradient(#0a7a00 -30%, #BB80FF 0%)",
+  // });
   custardtl.to("#custard", {
     ease: "power2.inOut",
-    backgroundImage: "radial-gradient(#0a7a00 -30%, #BB80FF 0%)",
+    backgroundColor: "#BB80FF",
   });
-  custardtl.to(
-    "#custard",
-    {
-      ease: "power2.inOut",
-      backgroundColor: "#BB80FF",
-    },
-    "<"
-  );
   custardtl.to(
     "#custard_image",
     {
@@ -1644,6 +1816,96 @@ mm.add("(max-width: 599px) and (prefers-reduced-motion: reduce)", () => {
     "<"
   );
   custardtl.to("#to_mangosteen", {
+    opacity: 1,
+    ease: "power2.inOut",
+  });
+
+  /* MANGOSTEEN SECTION */
+  let mangosteentl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#mangosteen",
+      end: `+=${height * 1}`,
+      pin: true,
+      scrub: 1,
+      markers: false,
+    },
+  });
+  mangosteentl.to("#mangosteen_name .char", {
+    opacity: 0,
+    // y: "+=50px",
+    ease: "power2.in",
+    // stagger: 0.05,
+  });
+  mangosteentl.to("#mangosteen", {
+    backgroundColor: "#55006e",
+  });
+  mangosteentl.to(
+    "#mangosteen_title .char",
+    // {
+    //   y: "+=30px",
+    // },
+    {
+      // y: "",
+      opacity: 1,
+      ease: "power2.out",
+      // stagger: 0.05,
+    }
+  );
+  mangosteentl.to(
+    "#mangosteen_image",
+    // {
+    //   scale: 0.2,
+    // },
+    {
+      // scale: 1,
+      opacity: 1,
+      ease: "power2.out",
+    },
+    "<"
+  );
+  // mangosteentl.to("#mangosteen_des .word", {
+  //   opacity: 0.2,
+  //   ease: "power2.out",
+  // });
+  mangosteentl.to("#mangosteen_des .word", {
+    opacity: 1,
+    ease: "power2.inOut",
+    // stagger: 0.05,
+  });
+  // transition to end
+  // mangosteentl.to("#mangosteen", {
+  //   ease: "power2.inOut",
+  //   backgroundImage: "radial-gradient(#55006e -30%, #FFFFFF 0%)",
+  // });
+  mangosteentl.to("#mangosteen", {
+    ease: "power2.inOut",
+    backgroundColor: "#FFFFFF",
+  });
+  mangosteentl.to(
+    "#mangosteen_image",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  mangosteentl.to(
+    "#mangosteen_title",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  mangosteentl.to(
+    "#mangosteen_des",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  mangosteentl.to("#to_end", {
     opacity: 1,
     ease: "power2.inOut",
   });
@@ -1819,7 +2081,7 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: reduce)", () => {
   let lycheetl = gsap.timeline({
     scrollTrigger: {
       trigger: "#lychee",
-      end: `+=${height * 2}`,
+      end: `+=${height * 1}`,
       pin: true,
       scrub: 1,
       markers: false,
@@ -1827,30 +2089,30 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: reduce)", () => {
   });
   lycheetl.to("#lychee_name .char", {
     opacity: 0,
-    y: "+=50px",
-    ease: "bounce.in",
-    stagger: 0.05,
+    // y: "+=50px",
+    ease: "power2.in",
+    // stagger: 0.05,
   });
   lycheetl.to("#lychee", {
-    backgroundImage: "radial-gradient(#840000 100%, #ff8080 130%)",
+    backgroundColor: "#840000",
   });
-  lycheetl.fromTo(
+  lycheetl.to(
     "#lychee_title .char",
+    // {
+    //   y: "+=30px",
+    // },
     {
-      y: "+=30px",
-    },
-    {
-      y: "",
+      // y: "",
       opacity: 1,
-      ease: "bounce.out",
-      stagger: 0.05,
+      ease: "power2.out",
+      // stagger: 0.05,
     }
   );
-  lycheetl.fromTo(
+  lycheetl.to(
     "#lychee_image",
-    {
-      scale: 0.2,
-    },
+    // {
+    //   scale: 0.2,
+    // },
     {
       scale: 1,
       opacity: 1,
@@ -1858,28 +2120,24 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: reduce)", () => {
     },
     "<"
   );
-  lycheetl.to("#lychee_des .word", {
-    opacity: 0.2,
-    ease: "power2.out",
-  });
+  // lycheetl.to("#lychee_des .word", {
+  //   opacity: 0.2,
+  //   ease: "power2.out",
+  // });
   lycheetl.to("#lychee_des .word", {
     opacity: 1,
     ease: "power2.inOut",
-    stagger: 0.05,
+    // stagger: 0.05,
   });
   // transition to papaya
+  // lycheetl.to("#lychee", {
+  //   ease: "power2.inOut",
+  //   backgroundImage: "radial-gradient(#840000 -30%, #FFC080 0%)",
+  // });
   lycheetl.to("#lychee", {
     ease: "power2.inOut",
-    backgroundImage: "radial-gradient(#840000 -30%, #FFC080 0%)",
+    backgroundColor: "#FFC080",
   });
-  lycheetl.to(
-    "#lychee",
-    {
-      ease: "power2.inOut",
-      backgroundColor: "#FFC080",
-    },
-    "<"
-  );
   lycheetl.to(
     "#lychee_image",
     {
@@ -1913,7 +2171,7 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: reduce)", () => {
   let papayatl = gsap.timeline({
     scrollTrigger: {
       trigger: "#papaya",
-      end: `+=${height * 2}`,
+      end: `+=${height * 1}`,
       pin: true,
       scrub: 1,
       markers: false,
@@ -1921,59 +2179,55 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: reduce)", () => {
   });
   papayatl.to("#papaya_name .char", {
     opacity: 0,
-    y: "+=50px",
-    ease: "bounce.in",
-    stagger: 0.05,
+    // y: "+=50px",
+    ease: "power2.in",
+    // stagger: 0.05,
   });
   papayatl.to("#papaya", {
-    backgroundImage: "radial-gradient(#d75300 100%, #FFC080 130%)",
+    backgroundColor: "#d75300",
   });
-  papayatl.fromTo(
+  papayatl.to(
     "#papaya_title .char",
+    // {
+    //   y: "+=30px",
+    // },
     {
-      y: "+=30px",
-    },
-    {
-      y: "",
+      // y: "",
       opacity: 1,
-      ease: "bounce.out",
-      stagger: 0.05,
+      ease: "power2.out",
+      // stagger: 0.05,
     }
   );
-  papayatl.fromTo(
+  papayatl.to(
     "#papaya_image",
+    // {
+    //   scale: 0.2,
+    // },
     {
-      scale: 0.2,
-    },
-    {
-      scale: 1,
+      // scale: 1,
       opacity: 1,
       ease: "power2.out",
     },
     "<"
   );
-  papayatl.to("#papaya_des .word", {
-    opacity: 0.2,
-    ease: "power2.out",
-  });
+  // papayatl.to("#papaya_des .word", {
+  //   opacity: 0.2,
+  //   ease: "power2.out",
+  // });
   papayatl.to("#papaya_des .word", {
     opacity: 1,
     ease: "power2.inOut",
-    stagger: 0.05,
+    // stagger: 0.05,
   });
   // transition to durian
+  // papayatl.to("#papaya", {
+  //   ease: "power2.inOut",
+  //   backgroundImage: "radial-gradient(#d75300 -30%, #FFEE80 0%)",
+  // });
   papayatl.to("#papaya", {
     ease: "power2.inOut",
-    backgroundImage: "radial-gradient(#d75300 -30%, #FFEE80 0%)",
+    backgroundColor: "#FFEE80",
   });
-  papayatl.to(
-    "#papaya",
-    {
-      ease: "power2.inOut",
-      backgroundColor: "#FFEE80",
-    },
-    "<"
-  );
   papayatl.to(
     "#papaya_image",
     {
@@ -2007,7 +2261,7 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: reduce)", () => {
   let duriantl = gsap.timeline({
     scrollTrigger: {
       trigger: "#durian",
-      end: `+=${height * 2}`,
+      end: `+=${height * 1}`,
       pin: true,
       scrub: 1,
       markers: false,
@@ -2015,59 +2269,55 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: reduce)", () => {
   });
   duriantl.to("#durian_name .char", {
     opacity: 0,
-    y: "+=50px",
-    ease: "bounce.in",
-    stagger: 0.05,
+    // y: "+=50px",
+    ease: "power2.in",
+    // stagger: 0.05,
   });
   duriantl.to("#durian", {
-    backgroundImage: "radial-gradient(#808000 100%, #FFEE80 130%)",
+    backgroundColor: "#808000",
   });
-  duriantl.fromTo(
+  duriantl.to(
     "#durian_title .char",
+    // {
+    //   y: "+=30px",
+    // },
     {
-      y: "+=30px",
-    },
-    {
-      y: "",
+      // y: "",
       opacity: 1,
-      ease: "bounce.out",
-      stagger: 0.05,
+      ease: "power2.out",
+      // stagger: 0.05,
     }
   );
-  duriantl.fromTo(
+  duriantl.to(
     "#durian_image",
+    // {
+    //   scale: 0.2,
+    // },
     {
-      scale: 0.2,
-    },
-    {
-      scale: 1,
+      // scale: 1,
       opacity: 1,
       ease: "power2.out",
     },
     "<"
   );
-  duriantl.to("#durian_des .word", {
-    opacity: 0.2,
-    ease: "power2.out",
-  });
+  // duriantl.to("#durian_des .word", {
+  //   opacity: 0.2,
+  //   ease: "power2.out",
+  // });
   duriantl.to("#durian_des .word", {
     opacity: 1,
     ease: "power2.inOut",
-    stagger: 0.05,
+    // stagger: 0.05,
   });
   // transition to custard apple
+  // duriantl.to("#durian", {
+  //   ease: "power2.inOut",
+  //   backgroundImage: "radial-gradient(#808000 -30%, #80FF80 0%)",
+  // });
   duriantl.to("#durian", {
     ease: "power2.inOut",
-    backgroundImage: "radial-gradient(#808000 -30%, #80FF80 0%)",
+    backgroundColor: "#80FF80",
   });
-  duriantl.to(
-    "#durian",
-    {
-      ease: "power2.inOut",
-      backgroundColor: "#80FF80",
-    },
-    "<"
-  );
   duriantl.to(
     "#durian_image",
     {
@@ -2101,7 +2351,7 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: reduce)", () => {
   let custardtl = gsap.timeline({
     scrollTrigger: {
       trigger: "#custard",
-      end: `+=${height * 2}`,
+      end: `+=${height * 1}`,
       pin: true,
       scrub: 1,
       markers: false,
@@ -2109,59 +2359,55 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: reduce)", () => {
   });
   custardtl.to("#custard_name .char", {
     opacity: 0,
-    y: "+=50px",
-    ease: "bounce.in",
-    stagger: 0.05,
+    // y: "+=50px",
+    ease: "power2.in",
+    // stagger: 0.05,
   });
   custardtl.to("#custard", {
-    backgroundImage: "radial-gradient(#0a7a00 100%, #80FF80 130%)",
+    backgroundColor: "#0a7a00",
   });
-  custardtl.fromTo(
+  custardtl.to(
     "#custard_title .char",
+    // {
+    //   y: "+=30px",
+    // },
     {
-      y: "+=30px",
-    },
-    {
-      y: "",
+      // y: "",
       opacity: 1,
-      ease: "bounce.out",
-      stagger: 0.05,
+      ease: "power2.out",
+      // stagger: 0.05,
     }
   );
-  custardtl.fromTo(
+  custardtl.to(
     "#custard_image",
+    // {
+    //   scale: 0.2,
+    // },
     {
-      scale: 0.2,
-    },
-    {
-      scale: 1,
+      // scale: 1,
       opacity: 1,
       ease: "power2.out",
     },
     "<"
   );
-  custardtl.to("#custard_des .word", {
-    opacity: 0.2,
-    ease: "power2.out",
-  });
+  // custardtl.to("#custard_des .word", {
+  //   opacity: 0.2,
+  //   ease: "power2.out",
+  // });
   custardtl.to("#custard_des .word", {
     opacity: 1,
     ease: "power2.inOut",
-    stagger: 0.05,
+    // stagger: 0.05,
   });
   // transition to mangosteen
+  // custardtl.to("#custard", {
+  //   ease: "power2.inOut",
+  //   backgroundImage: "radial-gradient(#0a7a00 -30%, #BB80FF 0%)",
+  // });
   custardtl.to("#custard", {
     ease: "power2.inOut",
-    backgroundImage: "radial-gradient(#0a7a00 -30%, #BB80FF 0%)",
+    backgroundColor: "#BB80FF",
   });
-  custardtl.to(
-    "#custard",
-    {
-      ease: "power2.inOut",
-      backgroundColor: "#BB80FF",
-    },
-    "<"
-  );
   custardtl.to(
     "#custard_image",
     {
@@ -2187,6 +2433,96 @@ mm.add("(min-width: 600px) and (prefers-reduced-motion: reduce)", () => {
     "<"
   );
   custardtl.to("#to_mangosteen", {
+    opacity: 1,
+    ease: "power2.inOut",
+  });
+
+  /* MANGOSTEEN SECTION */
+  let mangosteentl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#mangosteen",
+      end: `+=${height * 1}`,
+      pin: true,
+      scrub: 1,
+      markers: false,
+    },
+  });
+  mangosteentl.to("#mangosteen_name .char", {
+    opacity: 0,
+    // y: "+=50px",
+    ease: "power2.in",
+    // stagger: 0.05,
+  });
+  mangosteentl.to("#mangosteen", {
+    backgroundColor: "#55006e",
+  });
+  mangosteentl.to(
+    "#mangosteen_title .char",
+    // {
+    //   y: "+=30px",
+    // },
+    {
+      // y: "",
+      opacity: 1,
+      ease: "power2.out",
+      // stagger: 0.05,
+    }
+  );
+  mangosteentl.to(
+    "#mangosteen_image",
+    // {
+    //   scale: 0.2,
+    // },
+    {
+      // scale: 1,
+      opacity: 1,
+      ease: "power2.out",
+    },
+    "<"
+  );
+  // mangosteentl.to("#mangosteen_des .word", {
+  //   opacity: 0.2,
+  //   ease: "power2.out",
+  // });
+  mangosteentl.to("#mangosteen_des .word", {
+    opacity: 1,
+    ease: "power2.inOut",
+    // stagger: 0.05,
+  });
+  // transition to end
+  // mangosteentl.to("#mangosteen", {
+  //   ease: "power2.inOut",
+  //   backgroundImage: "radial-gradient(#55006e -30%, #FFFFFF 0%)",
+  // });
+  mangosteentl.to("#mangosteen", {
+    ease: "power2.inOut",
+    backgroundColor: "#FFFFFF",
+  });
+  mangosteentl.to(
+    "#mangosteen_image",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  mangosteentl.to(
+    "#mangosteen_title",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  mangosteentl.to(
+    "#mangosteen_des",
+    {
+      opacity: 0,
+      ease: "power2.inOut",
+    },
+    "<"
+  );
+  mangosteentl.to("#to_end", {
     opacity: 1,
     ease: "power2.inOut",
   });
