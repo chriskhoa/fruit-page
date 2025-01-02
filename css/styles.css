@@ -251,11 +251,11 @@ body {
 #custard_des,
 #mangosteen_des {
   grid-area: 3/1/6/2;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
   padding: 10% 15%;
   letter-spacing: 1px;
-  line-height: 40px;
+  line-height: 35px;
   margin: auto;
   color: #ff8080;
   text-align: center;
@@ -315,7 +315,7 @@ body {
   color: #000000;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 350px) {
   #lychee_des,
   #papaya_des,
   #durian_des,
