@@ -22,7 +22,7 @@ body {
 #fruit_page,
 #with_a,
 #twist {
-  font-size: 2.5rem;
+  font-size: 40px;
   text-align: center;
   font-weight: 700;
   position: absolute;
@@ -43,13 +43,13 @@ body {
 #ready,
 #learn {
   grid-area: 1/1/2/2;
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 300;
 }
 
 #exotic,
 #fruits {
-  font-size: 3rem;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -70,9 +70,9 @@ body {
   color: #840000;
   text-align: center;
   position: absolute;
-  font-size: 4rem;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 6rem;
+  line-height: 60px;
 }
 
 /* Styling for lychee, papaya, durian, sweetsop, mangosteen */
@@ -111,7 +111,7 @@ body {
 #durian_name,
 #custard_name,
 #mangosteen_name {
-  font-size: 4rem;
+  font-size: 50px;
   text-align: center;
   font-weight: 700;
   position: absolute;
@@ -128,12 +128,12 @@ body {
 
 #custard_name {
   color: #0a7a00;
-  font-size: 3.5rem;
+  font-size: 45px;
 }
 
 #mangosteen_name {
   color: #55006e;
-  font-size: 3rem;
+  font-size: 40px;
 }
 
 #lychee_content,
@@ -207,17 +207,17 @@ body {
 #custard_title,
 #mangosteen_title {
   grid-area: 2/1/4/2;
-  font-size: 5rem;
+  font-size: 50px;
   font-weight: 700;
 }
 
 /* fix sweetsop title size for phone view*/
 #custard_title {
-  font-size: 3.5rem;
+  font-size: 45px;
 }
 
 #mangosteen_title {
-  font-size: 3rem;
+  font-size: 40px;
 }
 
 #lychee_title .char,
@@ -251,10 +251,11 @@ body {
 #custard_des,
 #mangosteen_des {
   grid-area: 3/1/6/2;
-  font-size: 1.5rem;
+  font-size: 17px;
   font-weight: 500;
-  padding: 10% 17%;
-  line-height: 3rem;
+  padding: 10% 15%;
+  letter-spacing: 1px;
+  line-height: 40px;
   margin: auto;
   color: #ff8080;
   text-align: center;
@@ -293,9 +294,9 @@ body {
   color: #d75300;
   text-align: center;
   position: absolute;
-  font-size: 4rem;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 6rem;
+  line-height: 60px;
 }
 
 #to_durian {
@@ -314,12 +315,29 @@ body {
   color: #000000;
 }
 
+@media only screen and (min-width: 400px) {
+  #lychee_des,
+  #papaya_des,
+  #durian_des,
+  #custard_des,
+  #mangosteen_des {
+    grid-area: 3/1/6/2;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10% 15%;
+    letter-spacing: 1.5px;
+    line-height: 45px;
+    margin: auto;
+    text-align: center;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   /* Styling for intro section */
   #fruit_page,
   #with_a,
   #twist {
-    font-size: 6rem;
+    font-size: 80px;
     text-align: center;
     font-weight: 900;
     position: absolute;
@@ -327,26 +345,22 @@ body {
 
   #exotic,
   #fruits {
-    font-size: 6rem;
+    font-size: 80px;
     font-weight: 900;
   }
 
   #ready,
   #learn {
-    font-size: 3rem;
+    font-size: 40px;
     font-weight: 500;
-    letter-spacing: 0.1rem;
-    line-height: 3rem;
+    letter-spacing: 1.5px;
+    line-height: 40px;
   }
 
   #to_lychee {
-    line-height: 8rem;
-  }
-
-  #to_lychee {
-    font-size: 6rem;
+    font-size: 80px;
     font-weight: 900;
-    line-height: 10rem;
+    line-height: 120px;
   }
 
   /* Styling for lychee, papaya, durian */
@@ -355,7 +369,7 @@ body {
   #durian_name,
   #custard_name,
   #mangosteen_name {
-    font-size: 6rem;
+    font-size: 80px;
     font-weight: 900;
   }
 
@@ -364,7 +378,7 @@ body {
   #durian_title,
   #custard_title,
   #mangosteen_title {
-    font-size: 9rem;
+    font-size: 80px;
     font-weight: 900;
   }
 
@@ -373,11 +387,11 @@ body {
   #durian_des,
   #custard_des,
   #mangosteen_des {
-    font-size: 2.5rem;
-    letter-spacing: 0.2rem;
+    font-size: 150%;
+    letter-spacing: 1.5px;
     font-weight: 500;
-    padding: 5% 15%;
-    line-height: 5rem;
+    padding: 60px 15%;
+    line-height: 200%;
     text-align: justify;
   }
 
@@ -386,8 +400,53 @@ body {
   #to_custard,
   #to_mangosteen,
   #to_end {
-    font-size: 6rem;
+    font-size: 80px;
     font-weight: 900;
-    line-height: 10rem;
+    line-height: 120px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #lychee_des,
+  #papaya_des,
+  #durian_des,
+  #custard_des,
+  #mangosteen_des {
+    font-size: 175%;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    padding: 60px 15%;
+    line-height: 225%;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #lychee_des,
+  #papaya_des,
+  #durian_des,
+  #custard_des,
+  #mangosteen_des {
+    font-size: 200%;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    padding: 60px 15%;
+    line-height: 250%;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  #lychee_des,
+  #papaya_des,
+  #durian_des,
+  #custard_des,
+  #mangosteen_des {
+    font-size: 220%;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    padding: 60px 15%;
+    line-height: 275%;
+    text-align: justify;
   }
 }
